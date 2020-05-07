@@ -6,7 +6,7 @@
 
     @include xl{
         display: grid;
-        grid-template-rows: auto 1200px auto;
+        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-5 .";
     }
     
@@ -19,19 +19,17 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 340px);
             grid-template-areas:
-            "bike bike
-            bike bike
-            trees leaves";
+            "bike bike"
+            "bike bike"
+            "trees leaves";
         }    
 
         @include lg{
-
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2,340px);
             grid-template-areas:
-            "bike bike trees
-            bike bike leaves"
-
+            "bike bike trees"
+            "bike bike leaves"
         }
 
         @include xl{
@@ -39,27 +37,23 @@
         }
 
         li{
-             background-position: center;
-             background-size: cover;
-
+            background-position: center;
+            background-size: cover;
         }
         
         #bike{
             background-image: url("../img/section-5/bike.jpg");
-
             @include md{
                 grid-area: bike ;
                 background-position: center;      
             }
         }
+
         #trees{
             background-image: url("../img/section-5/trees.jpg");
-
             @include md{
                 grid-area: trees ;
-
             }
-
         }
 
         #leaves{
@@ -67,9 +61,7 @@
 
             @include md{
                 grid-area: leaves ;
-            
             }
-
         }
     }     
 }

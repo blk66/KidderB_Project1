@@ -384,7 +384,7 @@ footer {
       height: 512px; } }
   @media (min-width: 1200px) {
     #section-1 {
-      height: 800px; } }
+      height: 683px; } }
 /* =============
     Section 2
 ============= */
@@ -402,7 +402,7 @@ footer {
       #section-2 #section-2-container {
         grid-template-columns: 40% auto;
         display: grid;
-        grid-template-areas: " section-2-image section-2-container ";
+        grid-template-areas: " section-2-image section-2-content ";
         padding: 50px 0; } }
     @media (min-width: 1200px) {
       #section-2 #section-2-container {
@@ -415,8 +415,10 @@ footer {
           padding: 15px; } }
       #section-2 #section-2-container section #section-2-content {
         padding-bottom: 0 15px;
-        grid-area: section-2-content;
         padding-left: 15px; }
+        @media (min-width: 768px) {
+          #section-2 #section-2-container section #section-2-content {
+            grid-area: section-2-content; } }
     #section-2 #section-2-container aside {
       background-image: url("../img/section-2/dock.jpg");
       background-size: cover;
@@ -480,7 +482,7 @@ footer {
 @media (min-width: 1200px) {
   #section-5 {
     display: grid;
-    grid-template-rows: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
     grid-template-areas: ". section-5 ."; } }
 
 #section-5 ul {
@@ -491,12 +493,12 @@ footer {
     #section-5 ul {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 340px);
-      grid-template-areas: "bike bike bike bike trees leaves"; } }
+      grid-template-areas: "bike bike" "bike bike" "trees leaves"; } }
   @media (min-width: 992px) {
     #section-5 ul {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 340px);
-      grid-template-areas: "bike bike trees bike bike leaves"; } }
+      grid-template-areas: "bike bike trees" "bike bike leaves"; } }
   @media (min-width: 1200px) {
     #section-5 ul {
       grid-area: section-5; } }
@@ -527,7 +529,7 @@ footer {
   @media (min-width: 1200px) {
     #section-6 {
       display: grid;
-      grid-template-rows: auto 1200px auto;
+      grid-template-columns: auto 1200px auto;
       grid-template-areas: ". section-6 ."; } }
   @media (min-width: 1200px) {
     #section-6 > div {

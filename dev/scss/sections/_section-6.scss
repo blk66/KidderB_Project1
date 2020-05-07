@@ -3,13 +3,13 @@
 ============= */
 #section-6{
    padding: 42px 0 96px ;
-    @include xl{
-
+   
+   @include xl{
         display: grid;
-        grid-template-rows: auto 1200px auto;
+        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-6 .";
 
-    }
+   }
 
     >div{
 
@@ -23,12 +23,9 @@
         aside{
             text-align: center;
             margin-bottom: 34px;
-
             @include md{
                 margin-bottom: 46px;
             }
-
-
         }
 
         section{
@@ -41,11 +38,10 @@
             @include md{
                 grid-template-columns: auto 70% auto;
             }
+
             >div{
                 grid-area:section-6;
             }
-
         }
-
     }
 }
