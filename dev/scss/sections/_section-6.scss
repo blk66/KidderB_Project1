@@ -1,0 +1,51 @@
+/* =============
+    Section 6
+============= */
+#section-6{
+   padding: 42px 0 96px ;
+    @include xl{
+
+        display: grid;
+        grid-template-rows: auto 1200px auto;
+        grid-template-areas: ". section-6 .";
+
+    }
+
+    >div{
+
+        @include xl{
+            display: grid;
+            grid-template-columns: 35% auto;
+            grid-area: section-6;
+
+        }
+
+        aside{
+            text-align: center;
+            margin-bottom: 34px;
+
+            @include md{
+                margin-bottom: 46px;
+            }
+
+
+        }
+
+        section{
+            display: grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas: ". section-6 .";
+            text-align: justify;
+            color: maroon;
+
+            @include md{
+                grid-template-columns: auto 70% auto;
+            }
+            >div{
+                grid-area:section-6;
+            }
+
+        }
+
+    }
+}

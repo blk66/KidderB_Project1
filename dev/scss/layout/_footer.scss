@@ -1,0 +1,19 @@
+/* =============
+    Footer
+============= */
+footer {
+    background-color: $d-blue;
+    height:10px ;
+    color: white;
+    padding: 11px 0;
+    text-align: center;
+    position: relative;
+    
+    p{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+
+}
+

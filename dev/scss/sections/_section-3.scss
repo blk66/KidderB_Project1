@@ -1,0 +1,19 @@
+/* =============
+    Section 3
+============= */
+#section-3{
+    
+    background-image: url('../img/section-3/table.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 516px;
+
+
+        @include md{
+            height: 514px ;
+        }
+
+        @include xl{
+            height: 682px ;
+        }
+    }

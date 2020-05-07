@@ -1,0 +1,26 @@
+/* =============
+    Section 1
+============= */
+
+#section-1{
+
+        background-image: url('../img/section-1/mountains1.jpg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat ;
+        height: 370px;
+        color: maroon;
+
+        @include md{
+             height: 512px ;
+        }
+
+        @include xl{
+            height: 800px ;
+        }
+    
+    
+   
+   
+
+}
