@@ -330,6 +330,19 @@ ul {
 /* =============
     Typography
 ============= */
+body {
+  font-family: 'PT Serif', serif;
+  color: maroon; }
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 2.5rem; }
+
+p {
+  line-height: 1.875rem;
+  font-size: 1.125rem; }
+
 /* =============
     Buttons
 ============= */
@@ -354,6 +367,39 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header > div {
+    display: grid;
+    grid-template-areas: "logo burger" "nav nav";
+    grid-template-columns: 80% auto; }
+    header > div section,
+    header > div nav {
+      padding: 20px; }
+    header > div #logo-container {
+      grid-area: logo; }
+    header > div #burger-container {
+      align-items: center;
+      display: flex;
+      grid-area: burger;
+      justify-content: flex-end; }
+      @media (min-width: 992px) {
+        header > div #burger-container {
+          display: none; } }
+      header > div #burger-container i {
+        cursor: pointer; }
+    header > div #nav-container {
+      background-color: #fff;
+      grid-area: nav;
+      display: none;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #nav-container {
+          display: block; } }
 /* =============
     Footer
 ============= */

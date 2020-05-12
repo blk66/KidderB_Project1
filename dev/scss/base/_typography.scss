@@ -1,3 +1,19 @@
 /* =============
     Typography
 ============= */
+
+body{
+    font-family: 'PT Serif', serif;
+    color: maroon;
+}
+
+h1,h2{
+    margin: 0;
+    padding: 0;
+    line-height: rem-calc(40);
+}
+
+p{
+   line-height: rem-calc(30); 
+   font-size: rem-calc(18) ;
+}
