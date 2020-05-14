@@ -327,6 +327,15 @@ ul {
   ul li {
     list-style: none; }
 
+a {
+  text-decoration: none;
+  transition: 0.25s; }
+
+show-for-large {
+  display: none; }
+  @media (min-width: 992px) {
+    show-for-large {
+      display: block; } }
 /* =============
     Typography
 ============= */
@@ -364,11 +373,44 @@ textarea {
 /* =============
     Navigation
 ============= */
+ul {
+  height: 100%; }
+  @media (min-width: 992px) {
+    ul {
+      display: flex; } }
+  ul li {
+    margin-bottom: 12px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #060C35; }
+    @media (min-width: 992px) {
+      ul li {
+        align-items: center;
+        display: flex;
+        border-right: 2px solid #060C35;
+        border-bottom: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px; } }
+    ul li a:link,
+    ul li a:visited {
+      color: #060C35;
+      padding: 0 20px; }
+      @media (min-width: 992px) {
+        ul li a:link,
+        ul li a:visited {
+          color: #060C35; } }
+    ul li a:hover,
+    ul li a:active {
+      color: #602A2D; }
+  ul li:first-child {
+    border: none; }
+  ul li:last-child {
+    border: none; }
+
 /* =============
     Header
 ============= */
 header {
-  background-color: #fff;
+  background-color: #060C35;
   left: 0;
   position: fixed;
   top: 0;

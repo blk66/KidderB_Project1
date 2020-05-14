@@ -1,3 +1,52 @@
 /* =============
     Navigation
 ============= */
+ul {
+    height: 100%;
+
+    @include lg {
+        display: flex;
+    }
+
+    li {
+        margin-bottom: 12px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $d-blue;
+       
+
+        @include lg {
+            align-items: center;
+            display: flex;
+            border-right: 2px solid $d-blue;
+            border-bottom: 0px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+
+        }
+
+        a:link,
+        a:visited {
+            color: $d-blue;
+            padding: 0 20px;
+
+            @include lg {
+                color: $d-blue;
+            }
+
+        } 
+        a:hover,
+        a:active {
+
+            color: $maroon;
+
+        }
+    }
+
+    li:first-child {
+        border: none;
+    }
+    li:last-child {
+        border: none;
+    }
+}
+

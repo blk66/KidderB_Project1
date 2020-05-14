@@ -3,11 +3,12 @@
 ============= */
 
 header {
-    background-color: $white;
+    background-color: $d-blue;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
+    
 
     >div {
         display: grid;
@@ -19,6 +20,7 @@ header {
         section,
         nav {
             padding: 20px;
+            
         }
 
         #logo-container {
